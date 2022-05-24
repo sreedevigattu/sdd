@@ -1,0 +1,11 @@
+Total tables extracted: 2
+Table 1: Contents:
+1: b''; b''; b''; b''; b''; b''; b''; 
+2: b'KWANKO'; b'Soci\xc3\xa9t\xc3\xa9 m\xc3\xa9 SCIE Mere'; b'-'; b'-'; b'F TT'; b'60, bd  du  Mar\xc3\xa9chal  Joffre \xe2\x80\x98 |  92340  Bourgla  Reine'; b'440  546  885'; 
+3: b'Ruemo ne  nee 0 de  servi\xc3\xa7os  de internet  LTDA'; b'Int\xc3\xa9cration cjcbale'; b'100%'; b'100%'; b'e Br\xc3\xa9sil'; b'Av.  Brigadeiro  Luis  Antonio 3005  Casa  02  \xe2\x80\x94  Jardim Paulista  \xe2\x80\x94  Sao  Paulo'; b':'; 
+4: b'SWELEN'; b'Int\xc3\xa9gration globale'; b'100  %'; b'100  % \xc2\xb0'; b'F TE'; b'60, bd  du  Mar\xc3\xa9chal  Joffre |  92340  Bourgla  Reine'; b'509  573  88 7'; 
+5: b'Kwanko  Polska Sp.  Zoo'; b'Int\xc3\xa9gration globale'; b'100  %'; b'100  % \xc2\xb0'; b'Pologne 9'; b'Ui.  Grzybowska  4-144 Warsawa  00-359  -  Pologne'; b'-'; 
+6: b'. Kwanko  Spain  SE P'; b'int\xc3\xa9gration globale'; b'100  % \xc2\xb0'; b'100  % \xc2\xb0'; b'Espagne pes'; b'Gran  Via, 78 Madrid  -  Espagne'; b'-'; 
+7: b'\xc3\xa0 \xc3\xa0 org'; b'\xc3\xa0 M\xc3\xa9graon g'; b'100%'; b'100  %'; b'Portugal |  0'; b'Lagoas  Park  \xe2\x80\x94  Edificio 11,  Piso 2740-244  Porto  Salvo  - Portugal'; b'-'; 
+8: b'Nersfalion'; b'eu 1nt\xc3\xa9gration g'; b'50  %'; b'50%'; b'Maroc'; b'9, rue  Chatila  \xe2\x80\x94  Quartiers Palmiers  -  Casablanca  - Maroc'; b'-'; 
+9: b'KWANKO DEUTSCHLAND GmbH'; b'- \xc3\x89 \xc3\xa9graon globale'; b'100  %'; b''; b'100%  |  Allemagne'; b': Hohe  Bleichen  17 20354  Hamburg  \xe2\x80\x94  Allemagne'; b'-'; 

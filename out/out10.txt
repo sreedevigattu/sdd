@@ -1,0 +1,146 @@
+Started
+================================================================================
+Started at 2019-11-10 09:24:46.448698-->learn_nn.py E:/Sree/netalytics/SensitiveDataDiscovery/data/sdd1/ text 3 20 noshow 
+--------------------------------------------------------------------------------
+E:\repos\research\sdd/corpus/sdd1_text_train_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_train_categories.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_categories.pkl
+E:\repos\research\sdd/corpus/sdd1_text_train_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_train_categories.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_categories.pkl
+Loaded corpus from pickled files 0:00:00.096106
+E:\repos\research\sdd/corpus/sdd1_text_train_token_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_token_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_train_token_corpus.pkl
+E:\repos\research\sdd/corpus/sdd1_text_validate_token_corpus.pkl
+Tokenized from pickle files 0:00:01.743825
+0 pwd
+1 code
+2 bank
+[2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+[2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+Training data: <class 'list'> 40 Validation data: <class 'list'> 27
+Training categories: {0, 1, 2} Validation categories {0, 1, 2}
+40 40
+Encoded: [288, 58, 581, 583, 501, 348, 577, 797, 976, 577]
+Encoded docs: 40 [14267, 17201, 1076, 1091, 26710, 25215, 299, 1224, 1000, 738, 615, 426, 818, 536, 502, 855, 338, 338, 592, 23426, 108, 11914, 1608, 378, 473, 3811, 611, 60, 1703, 5208, 390, 107, 182, 1941, 2227, 10005, 50, 11, 47, 49] 26710
+<class 'int'> 26710
+Padded docs: 40
+27 27
+Encoded: [820, 969, 948, 37, 16, 974, 149, 858, 969, 508]
+<class 'int'> 26710
+Padded docs: 27
+Training corpus: <class 'numpy.ndarray'> 2 (40, 26710)
+Validation corpus: <class 'numpy.ndarray'> 2 (27, 26710)
+Training categories: <class 'numpy.ndarray'> 2 (40, 3)
+Validation categories: <class 'numpy.ndarray'> 2 (27, 3)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 26710, 100)        100000    
+_________________________________________________________________
+global_max_pooling1d_1 (Glob (None, 100)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                1010      
+_________________________________________________________________
+dense_2 (Dense)              (None, 50)                550       
+_________________________________________________________________
+dense_3 (Dense)              (None, 3)                 153       
+=================================================================
+Total params: 101,713
+Trainable params: 101,713
+Non-trainable params: 0
+_________________________________________________________________
+None
+Loss: 0.1754324140259996 Training Accuracy: 0.9750
+Actual: [[0. 0. 1.]
+ [0. 0. 1.]
+ [0. 0. 1.]
+ [0. 0. 1.]
+ [0. 0. 1.]
+ [0. 0. 1.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Predicted: [[0.18169942 0.26093686 0.5573637 ]
+ [0.12394276 0.6600829  0.21597438]
+ [0.16947746 0.23773645 0.5927861 ]
+ [0.17007966 0.23421575 0.59570456]
+ [0.15833245 0.39026242 0.45140514]
+ [0.14679328 0.16093825 0.69226843]
+ [0.01418755 0.9621853  0.02362708]
+ [0.02397693 0.9390463  0.03697672]
+ [0.02703149 0.9479321  0.02503639]
+ [0.03679037 0.9229798  0.04022978]
+ [0.01437993 0.96995395 0.01566619]
+ [0.01326177 0.9631411  0.02359718]
+ [0.01575646 0.9693363  0.01490722]
+ [0.00722853 0.9800121  0.0127593 ]
+ [0.02259249 0.94852936 0.02887812]
+ [0.0138469  0.9688191  0.01733398]
+ [0.00855877 0.9810065  0.01043473]
+ [0.00459472 0.9889565  0.00644868]
+ [0.00454414 0.9898767  0.00557911]
+ [0.0251224  0.95058626 0.02429135]
+ [0.05393839 0.89398414 0.05207755]
+ [0.00443895 0.9899907  0.00557037]
+ [0.00409512 0.9907438  0.0051611 ]
+ [0.00356059 0.99165404 0.00478531]
+ [0.00352397 0.99175125 0.00472484]
+ [0.41063976 0.40173742 0.18762279]
+ [0.446934   0.3406413  0.21242468]]
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\00001CO012019052800.xml' => [0.18169942 0.26093686 0.5573637 ], 0.557364 2 bank none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\BBPS_BILLER.xlsx' => [0.12394276 0.6600829  0.21597438], 0.660083 1 code none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\MOB_BBPS_27052019.txt' => [0.16947746 0.23773645 0.5927861 ], 0.592786 2 bank none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\sensitive-BBPS_RECON_FILE27052019.xlsx' => [0.17007966 0.23421575 0.59570456], 0.595705 2 bank none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\sensitive-GST_27052019.csv' => [0.15833245 0.39026242 0.45140514], 0.451405 2 bank none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\bank\\sensitive-RRPT_27052019.csv' => [0.14679328 0.16093825 0.69226843], 0.692268 2 bank none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_compare_reduction.py' => [0.01418755 0.9621853  0.02362708], 0.962185 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_face_recognition.py' => [0.02397693 0.9390463  0.03697672], 0.939046 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_mahalanobis_distances.py' => [0.02703149 0.9479321  0.02503639], 0.947932 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_outlier_detection_housing.py' => [0.03679037 0.9229798  0.04022978], 0.922980 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_sparse_cov.py' => [0.01437993 0.96995395 0.01566619], 0.969954 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\plot_tomography_l1_reconstruction.py' => [0.01326177 0.9631411  0.02359718], 0.963141 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\semanal_infer.py' => [0.01575646 0.9693363  0.01490722], 0.969336 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\semanal_shared.py' => [0.00722853 0.9800121  0.0127593 ], 0.980012 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\suggestions.py' => [0.02259249 0.94852936 0.02887812], 0.948529 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\treetransform.py' => [0.0138469  0.9688191  0.01733398], 0.968819 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\typevars.py' => [0.00855877 0.9810065  0.01043473], 0.981007 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\UpdateSplitTenderGroup.java' => [0.00459472 0.9889565  0.00644868], 0.988957 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\UpdateSubscription.java' => [0.00454414 0.9898767  0.00557911], 0.989877 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\update_blogs.py' => [0.0251224  0.95058626 0.02429135], 0.950586 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\utils.py' => [0.05393839 0.89398414 0.05207755], 0.893984 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\ValidateCustomerPaymentProfile.java' => [0.00443895 0.9899907  0.00557037], 0.989991 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\Void.java' => [0.00409512 0.9907438  0.0051611 ], 0.990744 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\VoidTransaction - Copy.java' => [0.00356059 0.99165404 0.00478531], 0.991654 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\code\\VoidTransaction.java' => [0.00352397 0.99175125 0.00472484], 0.991751 1 code ok
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\pwd\\pwd.txt' => [0.41063976 0.40173742 0.18762279], 0.410640 0 pwd none
+'E:\\Sree\\netalytics\\SensitiveDataDiscovery\\data\\sdd1\\validate\\pwd\\pwd1.txt' => [0.446934   0.3406413  0.21242468], 0.446934 0 pwd none
+Loss: 0.24795618653297424 Testing Accuracy:  0.9630
+[[ 2  0  0]
+ [ 0 19  0]
+ [ 0  1  5]]
+--------------------------------------------------------------------------------
+Completed at 2019-11-10 09:26:11.328254 Processing Time: 0:01:24.879556
+================================================================================
